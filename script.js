@@ -84,6 +84,12 @@ async function getMessage() {
 
 submitButton.addEventListener('click', getMessage)
 
+inputElement.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        getMessage()
+    }
+})
+
 stopButton.addEventListener('click', () => {
     if (controller) {
         controller.abort()
