@@ -1,0 +1,153 @@
+* {
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #343541;
+    display: flex;
+}
+
+h1 {
+    font-size: 33px;
+    font-weight: 600;
+    padding: 200px 0;
+    margin-top: -150px;
+}
+
+.side-bar {
+    background-color: #202123;
+    width: 244px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    overflow-y: auto;
+    padding-bottom: 60px; /* So it doesn’t overlap with input */
+}
+
+input {
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.05) 0px 54px 55px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 650px;
+    position: relative;
+    margin-bottom: -50px;
+    margin-top: 25px;
+}
+
+.bottom-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container #submit {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+button {
+    border: solid 0.5px rgba(255,255,255,0.5);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav {
+    border-top: solid 0.5px rgba(255,255,255,0.5);
+    padding: 10px;
+    margin: 10px;
+}
+
+.history {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.history p {
+    cursor: pointer;
+}
+
+#output {
+    white-space: pre-wrap;
+    padding: 20px;
+    max-height: auto; /* set a max-height */
+    overflow-y: auto;   /* add scroll if needed */
+    text-align: left;
+    width: 100%;
+    max-width: 650px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: -300px;
+}
+
+#stop {
+    cursor: pointer;
+}
+
+#clear-chat {
+    cursor: pointer;
+}
+
+.point {
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {    
+    .buttons {
+      flex-direction: column;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    input[type="text"] {
+      font-size: 1rem;
+    }
+  
+    .output {
+      font-size: 0.95rem;
+    }
+  
+    .history p {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+
+
