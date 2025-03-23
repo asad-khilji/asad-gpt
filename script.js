@@ -60,6 +60,7 @@ async function getMessage() {
                     const json = JSON.parse(line)
                     if (json.response) {
                         outPutElement.textContent += json.response
+                        outPutElement.scrollTop = outPutElement.scrollHeight // 👈 Auto-scroll
                     }
                 }
             })

@@ -103,15 +103,16 @@ nav {
 #output {
     white-space: pre-wrap;
     padding: 20px;
-    max-height: auto; /* set a max-height */
-    overflow-y: auto;   /* add scroll if needed */
+    height: 300px; /* fixed height */
+    overflow-y: auto;
     text-align: left;
     width: 100%;
     max-width: 650px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     margin-bottom: 10px;
-    margin-top: -300px;
+    margin-top: -200px;
+    scroll-behavior: smooth;
 }
 
 #stop {
